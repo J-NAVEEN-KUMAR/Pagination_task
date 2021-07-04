@@ -1,4 +1,3 @@
-
 var x = document.createElement('H1');
 var t = document.createTextNode("DOM PAGINATION");
 x.appendChild(t);
@@ -8,6 +7,7 @@ req.open('GET','http://raw.githubusercontent.com/Rajavasanthan/jsondata/master/p
 req.send();
 req.onload = function(data){
     var data = JSON.parse(this.response);
+    
     
     var store=[];
     for(var i=1;i<=10;i++){
@@ -70,6 +70,7 @@ req.onload = function(data){
     }
     
 }
+
 
 var table = document.createElement('table');
 table.setAttribute('class','table');
