@@ -3,7 +3,7 @@ var t = document.createTextNode("DOM PAGINATION");
 x.appendChild(t);
 document.body.appendChild(x);
 var req = new XMLHttpRequest();
-req.open('GET','http://raw.githubusercontent.com/Rajavasanthan/jsondata/master/pagenation.json',true);
+req.open('GET','https://raw.githubusercontent.com/Rajavasanthan/jsondata/master/pagenation.json',true);
 req.send();
 req.onload = function(data){
     var data = JSON.parse(this.response);
