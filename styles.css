@@ -20,5 +20,5 @@ th,td{
 button{
     margin: 0;
     padding: 10px;
-    border-radius: 2px;
+    transform : scale(0.98);
 }
